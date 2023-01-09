@@ -37,3 +37,5 @@ jobs:
           push: true
           tags: ${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
